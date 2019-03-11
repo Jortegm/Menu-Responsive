@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo/stilo.css" />
+    <link rel="stylesheet" type="text/javascript" href="js/js.js" />
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">INICIO</a>
+        <a href="#menu1">MENU 1</a>
+        <a href="#menu2">MENU 2</a>
+        <a href="#menu3">MENU 3</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div id="content">
+        <h2>EJEMPLO DE MENU RESPONSIVES EN HORIZONTAL Y VERTICAL</h2>
+        <p class="one ">En esta Resolución, se usan para laptop demasiado grandes, resoluciones mayores de 1200px. Creamos un menu a la izquierda de la pantalla de forma horizontal</p>
+        <p class="two ">La Resolución para este menu es para usa resolución de pantalla entre 720px y 1200px. Así aparece un menu de cabecera</p>
+        <p class="three ">La Resolución par este menu esta realizado para moviles o tablet. </p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav ") {
+                x.className += " responsive ";
+            } else {
+                x.className = "topnav ";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
